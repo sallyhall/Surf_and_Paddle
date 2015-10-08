@@ -1,0 +1,203 @@
+
+body{
+  margin:0;
+  padding:0;
+  color: #4F5A62;
+}
+
+header img{
+  width:20px;
+}
+
+.byline img{
+  width:30px;
+}
+
+
+header{
+  background-image: url(images/waves.jpg);
+}
+
+header, footer{
+  display:inline-block;
+  width:100%;
+  min-height: 100px;
+}
+
+h1, h2, header nav, li>a, quote{
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color:#083452;
+}
+
+ul{
+  list-style-type: none;
+  display: inline-block;
+}
+
+li{
+  display: inline-block;
+}
+
+footer nav a{
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color:white;
+  font-weight: lighter;
+  text-transform: none;
+}
+
+h1{
+  color: white;
+  font-size: 600%;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2{
+  font-size: 500%;
+}
+
+h4{
+  text-align: center;
+  font-weight: 300;
+  color:#233139;
+}
+
+quote{
+  color: #106DB3;
+  font-size: xx-large;
+  border-left: 2px solid lightgray;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+byline, byline a, .sidebar, .sidebar a{
+  color: #AEBCC7;
+}
+
+profile a{
+  text-decoration: none;
+}
+
+name, .sidebar heading{
+  color: #2477B7;
+}
+
+.sidebar name, .sidebar heading{
+  text-transform: uppercase;
+
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main, .sidebar, .branding, .nav-links{
+  display: inline-block;
+  margin:0 auto;
+  vertical-align: top;
+}
+
+.main{
+  width: 60%;
+}
+
+.sidebar{
+  width: 35%;
+}
+
+nav .container{
+  width: 97%;
+  margin: 0 auto;
+}
+
+.branding{
+  width: 65%;
+}
+
+.nav-links{
+  width: 30%;
+}
+
+ .post-link{
+   position: relative;
+   display: inline-block;
+   width: 25%;
+   text-decoration: none;
+   border: 0;
+   margin: 0;
+   padding: 0;
+ }
+
+.post-link span{
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index: 1000;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  font-size: 250%;
+  font-weight: bolder;
+  color: #1E3747;
+}
+
+.post-link img{
+  /*position: relative;*/
+  z-index: 1;
+  width:100%;
+  vertical-align: bottom;
+  border:0;
+  margin: 0;
+  padding: 0;
+}
+
+footer nav{
+  background-color: #1E3747;
+  color: white;
+  padding: 0 5%;
+  vertical-align: top;
+}
+
+footer nav a{
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  font-weight: lighter;
+  text-transform: none;
+  text-align: right;
+}
+
+footer nav img{
+  width: 80px;
+}
+
+
+footer h2{
+  text-align: center;
+}
+
+.button{
+  display: inline-block;
+  height: 20px;
+  background-color: gray;
+  padding: 5px;
+  margin: 3px;
+  vertical-align: top;
+  color: white;
+
+}
+.button img{
+  width: 20px;
+  background-color: darkgray;
+  padding: 0;
+}
+
+.link1 {
+  background-image: url("images/guywithboard.jpg");
+}
