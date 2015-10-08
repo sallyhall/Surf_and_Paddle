@@ -5,23 +5,30 @@ body{
   color: #4F5A62;
 }
 
-header img{
-  width:20px;
+nav img{
+  width:40px;
+  float: left;
+  margin: 3px;
 }
 
-.byline img{
-  width:30px;
+header .nav-links img{
+  width: 15px;
+  float: none;
 }
-
 
 header{
-  background-image: url(images/waves.jpg);
+  background:
+  linear-gradient(
+      rgba(30, 55, 71, 0.65),
+      rgba(30, 55, 71, 0.65)
+    ),
+  url(images/waves.jpg);
 }
 
 header, footer{
   display:inline-block;
   width:100%;
-  min-height: 100px;
+  min-height: 600px;
 }
 
 h1, h2, header nav, li>a, quote{
@@ -34,6 +41,7 @@ h1, h2, header nav, li>a, quote{
 ul{
   list-style-type: none;
   display: inline-block;
+  float: right;
 }
 
 li{
@@ -53,13 +61,16 @@ h1{
   font-size: 600%;
   font-weight: 400;
   text-align: center;
+  margin-top: 200px;
+  margin-bottom: 2px;
 }
 
 h2{
-  font-size: 500%;
+  font-size: 350%;
 }
 
 h4{
+  margin-top:0;
   text-align: center;
   font-weight: 300;
   color:#233139;
@@ -73,25 +84,58 @@ quote{
   padding: 10px;
 }
 
-byline, byline a, .sidebar, .sidebar a{
+.byline, .byline a, .sidebar, .sidebar a, .main a{
   color: #AEBCC7;
 }
 
-profile a{
+.byline, .byline a:visited, .sidebar, .sidebar a:visited, .main a:visited{
+  color: #0868B0;
+}
+
+.profile a{
   text-decoration: none;
 }
 
-name, .sidebar heading{
+.profile{
+  margin: 47px;
+  text-align: center;
+}
+.byline-image, .profile-image{
+  background:
+  linear-gradient(
+      rgba(36, 19, 183, 0.65),
+      rgba(36, 19, 183, 0.65)
+    ),
+  url("images/sally.png");
+  background-size: cover;
+
+}
+
+.byline-image{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.profile-image{
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  display: block;
+  margin: auto;
+}
+
+.name, .sidebar heading, .profile name{
   color: #2477B7;
 }
 
-.sidebar name, .sidebar heading{
+.name, .sidebar heading{
   text-transform: uppercase;
 
 }
 
 .container{
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -101,12 +145,16 @@ name, .sidebar heading{
   vertical-align: top;
 }
 
+.sidebar{
+  margin-left: 6%;
+}
+
 .main{
-  width: 60%;
+  width: 63%;
 }
 
 .sidebar{
-  width: 35%;
+  width: 28%;
 }
 
 nav .container{
@@ -120,8 +168,12 @@ nav .container{
 
 .nav-links{
   width: 30%;
+  float:right;
 }
 
+.posts{
+  height: 362px;
+}
  .post-link{
    position: relative;
    display: inline-block;
@@ -148,16 +200,6 @@ nav .container{
   font-size: 250%;
   font-weight: bolder;
   color: #1E3747;
-}
-
-.post-link img{
-  /*position: relative;*/
-  z-index: 1;
-  width:100%;
-  vertical-align: bottom;
-  border:0;
-  margin: 0;
-  padding: 0;
 }
 
 
@@ -217,7 +259,7 @@ footer h2{
   color:white;
 }
 
-.link2{
+.link2 {
   background:
   linear-gradient(
       rgba(30, 55, 71, 0.65),
@@ -249,4 +291,13 @@ footer h2{
   url("images/bottles.jpg");
 }
 .link4:hover{  background-image: url("images/bottles.jpg");
+}
+
+.branding p{
+  padding:10px 0;
+  margin:0;
+}
+
+footer .branding p{
+  padding: 30px 0;
 }
