@@ -130,6 +130,8 @@ nav .container{
    border: 0;
    margin: 0;
    padding: 0;
+   height: 362px;
+   background-size: 362px;
  }
 
 .post-link span{
@@ -157,6 +159,7 @@ nav .container{
   margin: 0;
   padding: 0;
 }
+
 
 footer nav{
   background-color: #1E3747;
@@ -199,5 +202,51 @@ footer h2{
 }
 
 .link1 {
-  background-image: url("images/guywithboard.jpg");
+  background:
+    linear-gradient(
+        rgba(30, 55, 71, 0.65),
+        rgba(30, 55, 71, 0.65)
+      ),
+    url("images/guywithboard.jpg");
+}
+.link1:hover {
+  background-image:  url("images/guywithboard.jpg");
+}
+
+.post-link:hover span{
+  color:white;
+}
+
+.link2{
+  background:
+  linear-gradient(
+      rgba(30, 55, 71, 0.65),
+      rgba(30, 55, 71, 0.65)
+    ),
+  url("images/Beer-Flight.jpg");
+}
+
+.link2:hover {
+  background-image: url("images/Beer-Flight.jpg");
+}
+.link3{
+  background:
+  linear-gradient(
+      rgba(30, 55, 71, 0.65),
+      rgba(30, 55, 71, 0.65)
+    ),
+  url("images/zachgalifinakis.jpg");
+}
+.link3:hover{
+  background-image: url("images/zachgalifinakis.jpg");
+}
+.link4{
+  background:
+  linear-gradient(
+      rgba(30, 55, 71, 0.65),
+      rgba(30, 55, 71, 0.65)
+    ),
+  url("images/bottles.jpg");
+}
+.link4:hover{  background-image: url("images/bottles.jpg");
 }
