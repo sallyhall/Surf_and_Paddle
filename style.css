@@ -34,7 +34,7 @@ header, footer{
   min-height: 600px;
 }
 
-h1, h2, header nav, li>a, quote{
+h1, h2, header nav, li>a, .quote{
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   text-decoration: none;
@@ -84,7 +84,7 @@ h4{
   color:#233139;
 }
 
-quote{
+.quote{
   color: #106DB3;
   font-size: xx-large;
   border-left: 2px solid lightgray;
@@ -101,7 +101,7 @@ quote{
   padding: 10px 0;
 }
 
-name, .byline a:visited, .sidebar a:visited, .main a:visited{
+.author, .byline a:visited, .sidebar a:visited, .main a:visited{
   margin-left: 8px;
   color: #0868B0;
 }
@@ -160,11 +160,11 @@ name, .byline a:visited, .sidebar a:visited, .main a:visited{
   margin: auto;
 }
 
-.name, .sidebar heading, .profile name{
+.name, .sidebar .heading, .profile .author{
   color: #2477B7;
 }
 
-.name, .sidebar heading{
+.name, .sidebar .heading{
   text-transform: uppercase;
 }
 
