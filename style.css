@@ -36,17 +36,13 @@ h1, h2, header nav, li>a, .quote{
   color:#083452;
 }
 
-li>a{
-  font-family: 'Oswald', sans-serif;
-}
-
 ul{
   list-style-type: none;
   float: right;
 }
 
 li{
-  display: inline;
+  display: inline-block;
   padding: 5px;
 }
 
@@ -241,6 +237,8 @@ nav .container{
   padding: 0;
  }
 
+
+
 .post-link span{
   position:absolute;
   bottom:0;
@@ -259,6 +257,7 @@ nav .container{
 .post-link img{
   opacity:.5;
   margin: 0;
+  width: 100%
 }
 
 .post-link:hover span{
@@ -276,7 +275,7 @@ footer nav{
   min-height: 85px
 }
 
-footer nav a{
+footer nav{
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   font-weight: lighter;
@@ -342,4 +341,5 @@ footer h2{
 
 footer .branding p{
   padding: 30px 0;
+  text-align: left;
 }
