@@ -1,0 +1,35 @@
+@media (max-width:950px) and (min-width:600px){
+  h1 {font-size: 3rem; margin-top: 75px;}
+  header{min-height: 300px;}
+}
+
+@media (max-width:950px){
+  .sidebar section{display: none;}
+  .sidebar {display: block; width: 100%; margin:60px auto;}
+  .main {width: 100%}
+  .post-link{
+    display: block;
+    width: 49%;
+    margin: 30px auto;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+@media (max-width:600px) {
+  h1 {font-size: 1.5rem; margin-top: 4px;}
+  h2 { margin: 2px;}
+  header{min-height: 150px;}
+  .branding p{display: none;}
+  .branding, .branding img, header nav .branding img{float: none;}
+  .branding, .nav-links, ul{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .nav-links{padding: 5px 0;}
+  .main p {margin-top: 0;}
+  .byline-image, .author, .connector{ display: none;}
+  .button-text{ display: none;}
+  footer h2{font-size: 2rem;}
+}

@@ -8,7 +8,7 @@ body{
 
 }
 
-nav img{
+header nav .branding img{
   width:40px;
   float: left;
   margin: 3px;
@@ -16,7 +16,6 @@ nav img{
 
 header .nav-links img{
   width: 15px;
-  float: none;
 }
 
 header{
@@ -26,12 +25,8 @@ header{
     rgba(47, 122, 178, 0.65)
     ),
   url(images/waves.jpg);
-}
-
-header, footer{
-  display:inline-block;
-  width:100%;
   min-height: 600px;
+  width: 100%
 }
 
 h1, h2, header nav, li>a, .quote{
@@ -47,14 +42,17 @@ li>a{
 
 ul{
   list-style-type: none;
-  display: inline-block;
   float: right;
 }
 
 li{
-  display: inline-block;
+  display: inline;
+  padding: 5px;
 }
 
+footer{
+  width: 100%;
+}
 footer nav a{
   font-family: 'Lato', sans-serif;
   text-decoration: none;
@@ -65,7 +63,7 @@ footer nav a{
 
 h1{
   color: white;
-  font-size: 600%;
+  font-size: 6em;
   font-weight: 400;
   text-align: center;
   margin-top: 200px;
@@ -96,9 +94,15 @@ h4{
   color: #AEBCC7;
 }
 
-#ad{
-  float: right;
+.caption{
+  font-size: 1rem;
   padding: 10px 0;
+  background-color: white;
+  height: 1rem;
+}
+
+.caption a{
+  float: right;
 }
 
 .author, .byline a:visited, .sidebar a:visited, .main a:visited{
@@ -121,42 +125,50 @@ h4{
   text-align: center;
 }
 .byline-image, .profile-image{
-  background:
-  linear-gradient(
-    rgba(47, 122, 178, 0.65),
-    rgba(47, 122, 178, 0.65)
-    ),
-  url("images/daniel.png");
-  background-size: cover;
+  background-color: rgba(47, 122, 178, 0.65);
 }
 
 .ad{
-  background:
-  linear-gradient(
-    rgba(47, 122, 178, 0.65),
-    rgba(47, 122, 178, 0.65)
-    ),
-  url("images/womanpaddleboard.jpg");
-  background-size: cover;
-  height: 250px;
+  background-color: rgba(47, 122, 178, 0.65);
+  margin:auto;
+  overflow: hidden;
+  width: 300px;
+  font-size: 0;
 }
 
-.byline-image{
+.ad img{
+  opacity: .5;
+}
+
+.ad:hover img{
+  opacity: 1;
+}
+
+.byline-image, .byline-image img{
   width: 30px;
   height: 30px;
   border-radius: 30px;
   float: left;
 }
 
-.byline{
-  margin: 10px;
+.byline-image img, .profile-image img{
+  opacity: .5;
 }
 
-.profile-image{
+.byline-image img:hover, .profile-image img:hover{
+  opacity: 1;
+}
+
+
+.byline{
+  margin: 10px;
+  margin-left: 0;
+}
+
+.profile-image, .profile-image img{
   width: 80px;
   height: 80px;
   border-radius: 80px;
-  display: block;
   margin: auto;
 }
 
@@ -206,27 +218,27 @@ nav .container{
 }
 
 .branding{
-  width: 65%;
+  width: 45%;
+  float: left;
 }
 
 .nav-links{
-  width: 30%;
-  float:right;
+  width: 50%;
 }
 
 .posts{
-  height: 362px;
+  font-size: 0;
 }
- .post-link{
-   position: relative;
-   display: inline-block;
-   width: 25%;
-   text-decoration: none;
-   border: 0;
-   margin: 0;
-   padding: 0;
-   height: 362px;
-   background-size: 362px;
+
+.post-link{
+  background-color: rgba(47, 122, 178, 0.9);
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  text-decoration: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
  }
 
 .post-link span{
@@ -239,17 +251,29 @@ nav .container{
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
-  font-size: 250%;
+  font-size: 2.5rem;
   font-weight: bolder;
   color: #1E3747;
 }
 
+.post-link img{
+  opacity:.5;
+  margin: 0;
+}
+
+.post-link:hover span{
+  color:white;
+}
+
+.post-link:hover img{
+  opacity:1;
+}
 
 footer nav{
   background-color: #1E3747;
   color: white;
   padding: 0 5%;
-  vertical-align: top;
+  min-height: 85px
 }
 
 footer nav a{
@@ -262,6 +286,7 @@ footer nav a{
 
 footer nav img{
   width: 80px;
+  float: left;
 }
 
 
@@ -277,7 +302,7 @@ footer h2{
   color: white;
 }
 
-.bluebutton{
+.button:hover{
   background-color: #106DB3;
 }
 
@@ -293,73 +318,21 @@ footer h2{
   background-color: #5E686F;
   padding: 0;
   margin-right:0;
-  display: inline-block;
   float: left;
 }
 
-.blueimage{
+.button:hover  .button-image{
   background-color: #083452;
 }
 
 .blackicon img{
   -webkit-filter: invert(100%);
 }
+
 .button-text{
   height: 30px;
   padding: 0 10px;
-  /*margin:0;*/
   display: inline-block;
-}
-
-
-.link1 {
-  background:
-    linear-gradient(
-        rgba(47, 122, 178, 0.65),
-        rgba(47, 122, 178, 0.65)
-      ),
-    url("images/guywithboard.jpg");
-}
-.link1:hover {
-  background-image:  url("images/guywithboard.jpg");
-}
-
-.post-link:hover span{
-  color:white;
-}
-
-.link2 {
-  background:
-  linear-gradient(
-    rgba(47, 122, 178, 0.65),
-    rgba(47, 122, 178, 0.65)
-    ),
-  url("images/Beer-Flight.jpg");
-}
-
-.link2:hover {
-  background-image: url("images/Beer-Flight.jpg");
-}
-.link3{
-  background:
-  linear-gradient(
-    rgba(47, 122, 178, 0.65),
-    rgba(47, 122, 178, 0.65)
-    ),
-  url("images/zachgalifinakis.jpg");
-}
-.link3:hover{
-  background-image: url("images/zachgalifinakis.jpg");
-}
-.link4{
-  background:
-  linear-gradient(
-    rgba(47, 122, 178, 0.65),
-    rgba(47, 122, 178, 0.65)
-    ),
-  url("images/bottles.jpg");
-}
-.link4:hover{  background-image: url("images/bottles.jpg");
 }
 
 .branding p{
