@@ -28,6 +28,11 @@
   }
   .nav-links{padding: 5px 0;}
   footer .branding p{text-align: center;}
+  footer{
+    border-top: 1px solid #AEBCC7;
+    padding-top: 80px;
+  }
+
 }
 
 @media (max-width:600px) {
