@@ -44,13 +44,13 @@ After completing this assignment, you be able to effectively use
 
 ## Normal Mode
 
-Using the image located `assets/surf-and-paddle.png`, create a html document using html and css to look like below, but be a function website:
+Using the image located `images/surf-and-paddle.png`, create a html document using html and css to look like below, but be a function website:
 
-![Surf and paddle image](assets/surf-and-paddle.png)
+![Surf and paddle image](images/surf-and-paddle.png)
 
 ## Hard Mode
 
-Complete Normal Mode then make the website fully responsive and adhering to this [responsive wireframe](assets/surf-and-paddle-responsive.pdf).
+Complete Normal Mode then make the website fully responsive and adhering to this [responsive wireframe](images/surf-and-paddle-responsive.pdf).
 
 ## Additional Resources
 
