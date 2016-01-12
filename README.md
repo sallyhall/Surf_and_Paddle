@@ -1,5 +1,7 @@
 # html-intro-surf-paddle
 
+Class assignment. View live here: http://sallykingston.me/Surf_and_Paddle/
+
 ## Description
 As a developer on the web, you will sometimes be tasked with creating an html page simply from an image file.  In this assignment, you&#x27;ll be taking an image and turning it into a functioning website.
 
